@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.Pipes;
 using UnityEngine;
 
 public class CubeCannonScript : MonoBehaviour
@@ -11,23 +12,44 @@ public class CubeCannonScript : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.RightShift))
+        if(Input.GetMouseButtonDown(0))
         {
             FireCube();
         }
+
+        Debug.Log("fireTip position: " + fireTip.position);
+    
+
+        Vector3 fireDirection = (aimingDot.position - fireTip.position).normalized;
+        transform.LookAt(aimingDot);
     }
+
+
 
     void FireCube()
     {
         GameObject cubeInstance = Instantiate(Cube, fireTip.position, fireTip.rotation);
 
-        Vector3 fireDirection = (aimingDot.position - fireTip.position).normalized;
+        Vector3 fireDirection = -(fireTip.position- aimingDot.position ).normalized;
+
 
         Rigidbody rb = cubeInstance.GetComponent<Rigidbody>();
         if(rb !=null)
         {
             rb.AddForce(fireDirection * fireForce, ForceMode.Impulse);
             Destroy(cubeInstance, 5f);
+        }
+
+
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (aimingDot != null)
+        {
+            // Draws a blue line from this transform to the target
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(fireTip.position, aimingDot.position);
         }
     }
 
