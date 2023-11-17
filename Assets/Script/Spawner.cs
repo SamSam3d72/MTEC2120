@@ -17,7 +17,7 @@ public class Spawner : MonoBehaviour
     {
         for (int i = 0; i < numberOfCubes; i++)
         {
-            Vector3 randomPos = new Vector3(Random.Range(-5f, 5f), 1f, Random.Range(-5f, 5f));
+            Vector3 randomPos = new Vector3(Random.Range(-5f, 25f), Random.Range (6f, 15), Random.Range(-5f, 25f));
             Instantiate(prefab, randomPos, Quaternion.identity);
         }
     }
