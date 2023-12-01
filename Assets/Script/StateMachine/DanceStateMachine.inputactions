@@ -1,0 +1,114 @@
+{
+    "name": "DanceStateMachine",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "84ec63be-51c4-457f-9e36-b8d650c74792",
+            "actions": [
+                {
+                    "name": "DanceBboy",
+                    "type": "Button",
+                    "id": "66c55e07-9e6f-4433-b52e-ae5de80bb086",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DanceHipHop",
+                    "type": "Button",
+                    "id": "3e930ed1-9df5-4b7b-be55-0f66bf882fbf",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DanceRobot",
+                    "type": "Button",
+                    "id": "58658ff0-3caf-4e70-a8e3-f04ef95fedd1",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DanceSilly",
+                    "type": "Button",
+                    "id": "1aae459f-3f60-40e7-8f9f-d4bc0f39fbbd",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "DanceTwerk",
+                    "type": "Button",
+                    "id": "eefb33a1-f695-4a77-87ca-ca377bd17965",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "98f5c2e2-8b9f-4e1f-85e1-b0ff1ec23479",
+                    "path": "<Keyboard>/1",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DanceBboy",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b7df7058-bbcc-46fd-88b5-8bad8fd5313d",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DanceHipHop",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4ff5fd7a-7e75-4f50-8943-20ff43e60d9e",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DanceRobot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b9c0a473-8599-4ba4-a838-15712ac923ae",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DanceSilly",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a1c75fe0-2902-4260-91c8-78de91a29516",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DanceTwerk",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
